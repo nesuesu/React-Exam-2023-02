@@ -1,25 +1,25 @@
 import UserContext from "../contexts/UserContext";
 import { useContext } from "react";
 
+import { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
 
     const { users, setUsers, postUser, addUser, setIsLoggedIn} = useContext(UserContext);
+    
+    const [error, setError] = useState(false);
 
     const navigateTo = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(`Email: `, e.target.email.value);
-        console.log(`Password: `, e.target.password.value);
-        console.log(`Password: `, e.target.repeatPassword.value);
 
         if (users.find(item => (item.email === e.target.email.value) )) {
-            alert('The email you entered exists');
-        } else if (e.target.password.value !== e.target.repeatPassword.value) {         
-            alert("Passwodrs must match");
+            setError(true);
+            setTimeout(() => {setError(false)} , "1000");
         } else {
             postUser({
                 email: e.target.email.value,
@@ -41,7 +41,7 @@ const Register = () => {
         <h1>Register</h1>
         <form onSubmit={handleSubmit}>
             <label htmlFor="">Email:
-                <input type="text" name="email" />
+                <input type="email" name="email" />
             </label>
             <br />
             <label htmlFor="">Password:
@@ -54,6 +54,7 @@ const Register = () => {
             <br />
             <input type="submit" />
         </form>
+        {error && <h3>ERROR</h3>}
         <hr />
         </>
     )
