@@ -4,20 +4,20 @@ import { useContext } from "react";
 
 const Add = () => {
 
-    const { postData } = useContext(PostContext);
+    const { postData, addPost } = useContext(PostContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(`Title: `,e.target.title.value);
         console.log(`Description: `,e.target.description.value);
-        
-        postData({
+
+        const newPost = {
             title: e.target.title.value,
             description: e.target.description.value,
-        });
-
-
-
+        }
+        
+        postData(newPost);
+        addPost(newPost);
     }
 
     return (

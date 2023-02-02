@@ -3,7 +3,7 @@ import { useContext } from "react";
 
 const Register = () => {
 
-    const { users, setUsers, postUser} = useContext(UserContext);
+    const { users, setUsers, postUser, addUser} = useContext(UserContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,7 +19,12 @@ const Register = () => {
             postUser({
                 email: e.target.email.value,
                 password: e.target.password.value,
-            })
+            });
+            
+            addUser({
+                email: e.target.email.value,
+                password: e.target.password.value,
+            });
         }
     }
 

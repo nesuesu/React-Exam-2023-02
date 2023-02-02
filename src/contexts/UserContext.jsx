@@ -10,16 +10,13 @@ const UserProvider = ({children}) => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    // ant pirmo užkrovimo atsisiunčiam visus vartotojus iš json serverio ir įsirašom juos į state kintamąjį
-    const getUsers = async () => {
-        const data = await fetch('http://localhost:5000/users')
-        .then(res => res.json());
-        setUsers(data);
+    // STATE FUNCTIONS
+
+    const addUser = (newUser) => {
+        setUsers([...users, newUser]);
     }
 
-    useEffect(()=>{
-        getUsers();
-    }, []); 
+    // CRUD FUNCTIONS
 
     const postUser = (newUser) => {
         fetch('http://localhost:5000/users', {
@@ -30,6 +27,17 @@ const UserProvider = ({children}) => {
         .then((res) => res.json());
     }
 
+        // ant pirmo užkrovimo atsisiunčiam visus vartotojus iš json serverio ir įsirašom juos į state kintamąjį
+        const getUsers = async () => {
+            const data = await fetch('http://localhost:5000/users')
+            .then(res => res.json());
+            setUsers(data);
+        }
+    
+        useEffect(()=>{
+            getUsers();
+        }, []); 
+
     return (
         <UserContext.Provider
         value = {{
@@ -38,6 +46,7 @@ const UserProvider = ({children}) => {
             isLoggedIn,
             setIsLoggedIn,
             postUser,
+            addUser,
         }}
         >
         {children}
