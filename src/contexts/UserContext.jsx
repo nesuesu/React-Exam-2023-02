@@ -8,6 +8,7 @@ const UserProvider = ({children}) => {
 
     const [users, setUsers] = useState(null);
 
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     // ant pirmo užkrovimo atsisiunčiam visus vartotojus iš json serverio ir įsirašom juos į state kintamąjį
     const getUsers = async () => {
@@ -25,6 +26,8 @@ const UserProvider = ({children}) => {
         value = {{
             users,
             setUsers,
+            isLoggedIn,
+            setIsLoggedIn,
         }}
         >
         {children}
