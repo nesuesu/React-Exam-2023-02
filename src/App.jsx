@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Add from './pages/Add';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -23,7 +24,11 @@ function App() {
 
       <Route path="/*" element={<h1>404 Page not Found</h1>}/>
     </Routes>
+
+    <Footer/>
     </>
+
+
   );
 }
 
