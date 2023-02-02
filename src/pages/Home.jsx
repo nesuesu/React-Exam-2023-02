@@ -1,19 +1,27 @@
 
 import UserContext from "../contexts/UserContext";
+import PostContext from "../contexts/PostContext";
 import { useContext } from "react";
+
+import Post from "./Post";
 
 const Home = () => {
 
     const {users} = useContext(UserContext);
+    const {posts} = useContext(PostContext);
 
     return (
         <>
         <h1>Home</h1>
-        <h3>Current Users:</h3>
-        {users ? 
+
+        {posts ? 
             <div>
-                {users.map(user => (
-                    <p>{user.id} - {user.email} - {user.password}</p>
+                <h3>Current Posts:</h3>
+                {posts.map((post,index) => (
+                    <Post  
+                        post = {post}
+                        key = {index}
+                    />
                 ))}
             </div>
         :
