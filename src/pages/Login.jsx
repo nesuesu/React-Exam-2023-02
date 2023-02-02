@@ -1,9 +1,13 @@
 import UserContext from "../contexts/UserContext";
 import { useContext } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
 
     const { users, setIsLoggedIn, isLoggedIn } = useContext(UserContext);
+
+    const navigateTo = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,6 +21,7 @@ const Login = () => {
             alert("Username or password are wrong");
         }
         console.log(isLoggedIn);
+        navigateTo('/');
     }
 
     return (

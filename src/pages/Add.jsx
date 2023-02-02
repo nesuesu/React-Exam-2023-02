@@ -2,9 +2,13 @@
 import PostContext from "../contexts/PostContext";
 import { useContext } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 const Add = () => {
 
     const { postData, addPost } = useContext(PostContext);
+
+    const navigateTo = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,6 +22,8 @@ const Add = () => {
         
         postData(newPost);
         addPost(newPost);
+
+        navigateTo('/');
     }
 
     return (

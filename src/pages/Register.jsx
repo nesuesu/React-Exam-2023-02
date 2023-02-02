@@ -1,9 +1,14 @@
 import UserContext from "../contexts/UserContext";
 import { useContext } from "react";
 
+import { useNavigate } from "react-router-dom";
+
+
 const Register = () => {
 
-    const { users, setUsers, postUser, addUser} = useContext(UserContext);
+    const { users, setUsers, postUser, addUser, setIsLoggedIn} = useContext(UserContext);
+
+    const navigateTo = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -20,11 +25,14 @@ const Register = () => {
                 email: e.target.email.value,
                 password: e.target.password.value,
             });
-            
+
             addUser({
                 email: e.target.email.value,
                 password: e.target.password.value,
             });
+
+            setIsLoggedIn(true);
+            navigateTo('/');
         }
     }
 
