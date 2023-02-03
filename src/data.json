@@ -53,40 +53,46 @@
       "description": "Fish are vertebrates (vertebrates have backbones) that live in water. They breathe using special organs called gills."
     }
   ],
-  "Mammals":[
+  "Mammals": [
     {
-        "id": 1,
-        "title":"African elephant",
-        "description":"African elephants are the largest land animals on Earth. They are slightly larger than their Asian cousins and can be identified by their larger ears that look somewhat like the continent of Africa. (Asian elephants have smaller, rounded ears.) An adult African elephant's trunk is about seven feet (two meters) long! It's actually an elongated nose and upper lip. Like most noses, trunks are for smelling."
-    }, {
-        "id": 2,
-        "title":"American bison",
-        "description":"Bison are the iconic image of the Great Plains and the Old West. They are massive, shaggy beasts and the heaviest land animals in North America. Despite their hefty size, bison are quick on their feet. When the need arises they can run at speeds up to 35 miles an hour. Their curved, sharp horns can grow to be 2 feet long."
-    }, {
-        "id": 3,
-        "title":"Amur leopard",
-        "description":"Amur leopards weigh about 80 pounds, some 30 pounds less than the average African leopard. But these cats can still take down prey up to three times their size. They prefer to feast on deer and boar, but will eat rabbits and mice if they can’t find bigger game. Scientists sometimes call Amur leopards the “silent killer” since they’re so good at sneaking up on prey."
-    }, {
-        "id": 4,
-        "title":"Arctic foxes",
-        "description":" Arctic foxes live on the land and sea ice within the Arctic Circle.Their thick fur coat keeps the fox’s body at a toasty 104°F. Their long, fluffy tails act like a blanket, keeping the fox warm when it wraps the tail around its body to sleep.Their feet also have a layer of thick fur, like built-in snow boots. This helps muffle an arctic fox’s footsteps, making it harder for prey to hear them." 
-      
-    }, {
-        "id": 5,
-        "title":"Bactrian camels",
-        "description":"Bactrian camels have two humps on their backs where they store fat. Their nostrils close to block sand, and their bushy eyebrows and two rows of long eyelashes protect their eyes from blowing sand and ice. Bactrian camels are hardy animals that dwell in the deserts of Central and East Asia. Camels move both legs on one side of the body forward at the same time, like giraffes and race horses. This is called pacing."
-    }, {
-        "id": 6,
-        "title":"Beluga",
-        "description":"The beluga, or white whale, is one of the smallest species of whale. Their distinctive color and prominent foreheads make them easily identifiable. These whales are common in the Arctic Ocean's coastal waters, though they are found in subarctic waters as well. Arctic belugas migrate southward in large herds when the sea freezes over."
-    }, {
-        "id": 7,
-        "title":"Brown bears",
-        "description":"Brown bears eat mostly vegetation. They supplement their diets with the meat of animals such as fish and small mammals, when it's available. As winter approaches, brown bears prepare for a long winter sleep. During the fall, a brown bear eats practically around the clock, stocking up for the four to seven months when it'll have to live off stored body fat. A brown bear may chow down on 90 pounds of food each day."
-    }, {
-        "id": 8,
-        "title":"Giant panda",
-        "description":"High in dense bamboo forests in the misty, rainy mountains of southwestern China lives one of the world's rarest mammals: the giant panda, also called the panda. Only about 1,500 of these black-and-white bears survive in the wild. Pandas eat almost nothing but bamboo shoots and leaves. Occasionally they eat other vegetation, fish, or small mammals, but bamboo accounts for 99 percent of their diets.Giant pandas spend up to 12 hours a day eating bamboo."
+      "id": 1,
+      "title": "African elephant",
+      "description": "African elephants are the largest land animals on Earth. They are slightly larger than their Asian cousins and can be identified by their larger ears that look somewhat like the continent of Africa. (Asian elephants have smaller, rounded ears.) An adult African elephant's trunk is about seven feet (two meters) long! It's actually an elongated nose and upper lip. Like most noses, trunks are for smelling."
+    },
+    {
+      "id": 2,
+      "title": "American bison",
+      "description": "Bison are the iconic image of the Great Plains and the Old West. They are massive, shaggy beasts and the heaviest land animals in North America. Despite their hefty size, bison are quick on their feet. When the need arises they can run at speeds up to 35 miles an hour. Their curved, sharp horns can grow to be 2 feet long."
+    },
+    {
+      "id": 3,
+      "title": "Amur leopard",
+      "description": "Amur leopards weigh about 80 pounds, some 30 pounds less than the average African leopard. But these cats can still take down prey up to three times their size. They prefer to feast on deer and boar, but will eat rabbits and mice if they can’t find bigger game. Scientists sometimes call Amur leopards the “silent killer” since they’re so good at sneaking up on prey."
+    },
+    {
+      "id": 4,
+      "title": "Arctic foxes",
+      "description": " Arctic foxes live on the land and sea ice within the Arctic Circle.Their thick fur coat keeps the fox’s body at a toasty 104°F. Their long, fluffy tails act like a blanket, keeping the fox warm when it wraps the tail around its body to sleep.Their feet also have a layer of thick fur, like built-in snow boots. This helps muffle an arctic fox’s footsteps, making it harder for prey to hear them."
+    },
+    {
+      "id": 5,
+      "title": "Bactrian camels",
+      "description": "Bactrian camels have two humps on their backs where they store fat. Their nostrils close to block sand, and their bushy eyebrows and two rows of long eyelashes protect their eyes from blowing sand and ice. Bactrian camels are hardy animals that dwell in the deserts of Central and East Asia. Camels move both legs on one side of the body forward at the same time, like giraffes and race horses. This is called pacing."
+    },
+    {
+      "id": 6,
+      "title": "Beluga",
+      "description": "The beluga, or white whale, is one of the smallest species of whale. Their distinctive color and prominent foreheads make them easily identifiable. These whales are common in the Arctic Ocean's coastal waters, though they are found in subarctic waters as well. Arctic belugas migrate southward in large herds when the sea freezes over."
+    },
+    {
+      "id": 7,
+      "title": "Brown bears",
+      "description": "Brown bears eat mostly vegetation. They supplement their diets with the meat of animals such as fish and small mammals, when it's available. As winter approaches, brown bears prepare for a long winter sleep. During the fall, a brown bear eats practically around the clock, stocking up for the four to seven months when it'll have to live off stored body fat. A brown bear may chow down on 90 pounds of food each day."
+    },
+    {
+      "id": 8,
+      "title": "Giant panda",
+      "description": "High in dense bamboo forests in the misty, rainy mountains of southwestern China lives one of the world's rarest mammals: the giant panda, also called the panda. Only about 1,500 of these black-and-white bears survive in the wild. Pandas eat almost nothing but bamboo shoots and leaves. Occasionally they eat other vegetation, fish, or small mammals, but bamboo accounts for 99 percent of their diets.Giant pandas spend up to 12 hours a day eating bamboo."
     }
-]
+  ]
 }

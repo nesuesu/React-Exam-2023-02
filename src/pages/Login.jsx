@@ -22,27 +22,26 @@ const Login = () => {
         } else {
             setIsLoggedIn(false);
             setError(true);
-            setTimeout(() => {setError(false)} , "3000");
-            // alert("Username or password are wrong");
+            setTimeout(() => { setError(false) }, "3000");
         }
-   
+
     }
 
     return (
         <>
-        <form className="forma" onSubmit={handleSubmit}>
-        <h3>Log in</h3>
-            <label htmlFor="">Email:
-                <input type="email" name="email" />
-            </label>
-            <br />
-            <label htmlFor="">Password:
-                <input type="password" name="password"/>
-            </label>
-            <br />
-            <input type="submit" value="Log In"/>
-        </form>
-        {error && <h3 className="err">ERROR</h3>}
+            <form className="forma" onSubmit={handleSubmit}>
+                <h3>Log in</h3>
+                <label htmlFor="">Email:
+                    <input type="email" name="email" />
+                </label>
+                <br />
+                <label htmlFor="">Password:
+                    <input type="password" name="password" />
+                </label>
+                <br />
+                <input type="submit" value="Log In" />
+            </form>
+            {error && <h3 className="err">ERROR</h3>}
         </>
     )
 }

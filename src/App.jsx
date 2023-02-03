@@ -1,6 +1,6 @@
 
 import './App.css';
-import {Routes,Route, useNavigate} from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
 import Header from './Header';
 import Home from './pages/Home';
@@ -13,30 +13,30 @@ import UserContext from './contexts/UserContext';
 
 function App() {
 
-  const {isLoggedIn} = useContext(UserContext);
+  const { isLoggedIn } = useContext(UserContext);
   const navigateTo = useNavigate();
 
   useEffect(() => {
     navigateTo('/');
-  },[])
+  }, [])
 
 
   return (
     <>
-    
-    <Header/>
 
-    <Routes>
-      <Route path='/' element={!isLoggedIn && <Login/>} />
-      <Route path='/register' element={<Register/>} />
+      <Header />
 
-      <Route path='/home' element={isLoggedIn && <Home/>} />
-      <Route path='/add' element={isLoggedIn && <Add/>} />
+      <Routes>
+        <Route path='/' element={!isLoggedIn && <Login />} />
+        <Route path='/register' element={<Register />} />
 
-      <Route path="/*" element={<h1>404 Page not Found</h1>}/>
-    </Routes>
+        <Route path='/home' element={isLoggedIn && <Home />} />
+        <Route path='/add' element={isLoggedIn && <Add />} />
 
-    <Footer/>
+        <Route path="/*" element={<h1>404 Page not Found</h1>} />
+      </Routes>
+
+      <Footer />
     </>
 
 
