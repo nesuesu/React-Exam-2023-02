@@ -18,11 +18,11 @@ const Login = () => {
 
         if (users.find(item => (item.email === e.target.email.value) && (item.password === e.target.password.value))) {
             setIsLoggedIn(true);
-            navigateTo('/');
+            navigateTo('/home');
         } else {
             setIsLoggedIn(false);
             setError(true);
-            setTimeout(() => {setError(false)} , "1000");
+            setTimeout(() => {setError(false)} , "3000");
             // alert("Username or password are wrong");
         }
    
@@ -30,8 +30,8 @@ const Login = () => {
 
     return (
         <>
-        <h1>Log in</h1>
-        <form onSubmit={handleSubmit}>
+        <form className="forma" onSubmit={handleSubmit}>
+        <h3>Log in</h3>
             <label htmlFor="">Email:
                 <input type="email" name="email" />
             </label>
@@ -40,10 +40,9 @@ const Login = () => {
                 <input type="password" name="password"/>
             </label>
             <br />
-            <input type="submit" />
+            <input type="submit" value="Log In"/>
         </form>
-        {error && <h3>ERROR</h3>}
-        <hr />
+        {error && <h3 className="err">ERROR</h3>}
         </>
     )
 }

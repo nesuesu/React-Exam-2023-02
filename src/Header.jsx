@@ -9,18 +9,23 @@ const Header = () => {
 
     return (
         <header>
-            <div>
+
+            <div className='logo'>
                 <img src={logo} alt="logo" />
             </div>
 
-            {isLoggedIn ?
             <div>
-                <Link to={'/'}>Home</Link>
+                <img style={{width:'100%'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkN4MHT61mUb3ILYKY6mqXnNRu7vrDFxwW2M2_AqDv38J6UDKpMGkf36LQTs_rFlHPQ&usqp=CAU" />
+            </div>
+
+            {isLoggedIn ?
+            <div className='menu'>
+                <Link to={'/home'}>Home</Link>
                 <Link to={'/add'}>Add</Link>
             </div>
             :
-            <div>
-                <Link to={'/login'}>Log in</Link>
+            <div className='menu'>
+                <Link to={'/'}>Log in</Link>
                 <Link to={'/register'}>Register</Link>
             </div>
             

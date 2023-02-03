@@ -17,7 +17,7 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (users.find(item => (item.email === e.target.email.value) )) {
+        if (users.find(item => (item.email === e.target.email.value)) || (e.target.email.value === '') || (e.target.password.value !== e.target.repeatPassword.value) ) {
             setError(true);
             setTimeout(() => {setError(false)} , "1000");
         } else {
@@ -32,14 +32,14 @@ const Register = () => {
             });
 
             setIsLoggedIn(true);
-            navigateTo('/');
+            navigateTo('/home');
         }
     }
 
     return (
         <>
-        <h1>Register</h1>
-        <form onSubmit={handleSubmit}>
+        <form className="forma" onSubmit={handleSubmit}>
+            <h3>Register</h3>
             <label htmlFor="">Email:
                 <input type="email" name="email" />
             </label>
@@ -52,10 +52,9 @@ const Register = () => {
                 <input type="password" name="repeatPassword" />
             </label>
             <br />
-            <input type="submit" />
+            <input type="submit" value="Register"/>
         </form>
-        {error && <h3>ERROR</h3>}
-        <hr />
+        {error && <h3 className="err">ERROR</h3>}
         </>
     )
 }

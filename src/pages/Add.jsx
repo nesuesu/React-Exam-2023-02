@@ -23,13 +23,13 @@ const Add = () => {
         postData(newPost);
         addPost(newPost);
 
-        navigateTo('/');
+        navigateTo('/home');
     }
 
     return (
         <>
-        <h1>Add</h1>
-        <form onSubmit={handleSubmit}>
+        <form className="forma" onSubmit={handleSubmit}>
+            <h3>Add Post</h3>
             <label htmlFor="">Title:
                 <input type="text" name="title" />
             </label>
@@ -38,9 +38,8 @@ const Add = () => {
                 <textarea name="description" id="desc" cols="30" rows="10"></textarea>
             </label>
             <br />
-            <input type="submit" />
+            <input type="submit" value="Add"/>
         </form>
-        <hr />
         </>
     )
 }
