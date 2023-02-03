@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <>
         
-        <h1 style={{textAlign:'center', color:"blue", textDecoration: 'underline'}}>6 Types of Animals:</h1>
+        <h1 style={{textAlign:'center', color:"blue", textDecoration: 'underline'}}>Animals (mammals):</h1>
         <div className="posts animals">
         {posts ? 
             (posts.map((post,index) => (

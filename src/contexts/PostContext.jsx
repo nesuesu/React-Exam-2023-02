@@ -18,7 +18,7 @@ const PostProvider = ({children}) => {
 
     // ant pirmo užkrovimo atsisiunčiam visus vartotojus iš json serverio ir įsirašom juos į state kintamąjį
     const getPosts = async () => {
-        const data = await fetch('http://localhost:5000/AnimalsTypes')
+        const data = await fetch('http://localhost:5000/Mammals')
         .then(res => res.json());
         setPosts(data);
     }
@@ -28,7 +28,7 @@ const PostProvider = ({children}) => {
     }, []); 
 
     const postData = (newPost) => {
-        fetch('http://localhost:5000/AnimalsTypes', {
+        fetch('http://localhost:5000/Mammals', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newPost),
