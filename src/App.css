@@ -1,0 +1,92 @@
+
+body {
+    margin: 20px;
+}
+
+/* ---------------------------------- */
+
+header {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 1.25em;
+    gap: 20px;
+
+}
+
+/* ---------------------------------- */
+
+.forma {
+    display: block;
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #99bbca;
+    margin: 25px auto;
+    padding: 15px;  
+    margin: 25 auto;
+    background-color: rgb(200, 245, 245);
+}
+
+.forma h3 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.forma input, textarea {
+    margin: 5px;
+    width: 96%;
+    box-sizing: border-box;
+}
+
+.forma [type="submit"] {
+    margin-top: 15px;
+    height: 30px;
+    background-color: rgb(130, 200, 241);
+}
+
+.forma [type="submit"]:hover {
+    background-color: rgb(58, 170, 235);
+}
+
+.err {
+    color: red;
+    text-align: center;
+}
+
+/* ---------------------------------- */
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.post {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: rgb(200, 245, 245);
+    width: 300px;
+    text-align: justify;
+    color:rgb(7, 7, 110);
+}
+
+.animals {
+    background-image: url("./images/types-of-animals.jpg");
+}
+
+/* ---------------------------------- */
+
+footer {
+    text-align: center;
+    border-top: 1px solid black;
+}
